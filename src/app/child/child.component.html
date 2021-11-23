@@ -1,0 +1,32 @@
+<button (click)="onMyChildClick()">Click Me !!</button>
+
+<br/>
+<hr/>
+<h3>Arithmetic Operations</h3>
+
+First Number
+<input (input)="FirstNumber=$any($event.target).value">
+Second Number 
+<input (input) = "SecondNumber=$any($event.target).value">
+
+<br> <br>
+<button (click) = "add()">Addition</button> &nbsp;
+<button (click) = "sub()">Subtraction</button> &nbsp;
+<button (click) = "mul()">Multiplication</button> &nbsp;
+<button (click) = "div()">Division</button> &nbsp;
+
+<h1>Calculate Area</h1>
+Enter Length
+<input (input)="Length=$any($event.target).value">
+Enter Width
+<input (input)="width=$any($event.target).value">
+<br> <br>
+<button (click)="areaofRectangle()">Rectangle</button> &nbsp;<hr/>
+
+<h1>Calculate Area of Square and Circle</h1>
+Enter Square Length or Circle Radius
+<input (input)="radius=$any($event.target).value">
+<br/>
+<br/>
+<button (click)="areaofSquare()">Square</button>
+<button (click)="areaofCircle()">Circle</button>
